@@ -1,6 +1,8 @@
 const User = require('../models/user')
 const { validateToken, generateToken } = require('../utils/jwt')
-const bcrypt = require('bcrypt')
+// const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
+
 const Joi = require('joi')
 
 async function registerUser(req, res) {
